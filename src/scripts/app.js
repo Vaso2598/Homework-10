@@ -260,26 +260,26 @@ const products = [
 	},
 ];
 
+document.write(`<div class="container">`);
 document.write(`<div class="row">`);
 for (let i = 0; i < products.length; i++) {
 	document.write(`<div class="col-12 col-md-6 col-xl-4">`);
 	document.write(
 		`<div class="me-3 overflow-hidden">
             <div class="my-3 p-3">
-            <img class="object-fit-cover" style="width: 200px; height: 200px" src="${products[i].image}">
-            <p class="lead">${products[i].price}€</p>
-            <h2 class="" style="height: 155px">${products[i].title}</h2>
-                    <p>${products[i].description}</p>
-                    <p>${products[i].category}</p>
-                    <div class="row">
-                    <p>${products[i].rating.rate}</p>
-                    <p>${products[i].rating.count}</p>
-                </div>
+            	<img class="object-fit-scale" style="width: 200px; height: 200px" src="${products[i].image}">
+            	<p class="lead">${products[i].price}€</p>
+            	<h2 class="overflow-auto text-break" style="height: 100px">${products[i].title}</h2>
+				<p class="overflow-auto text-break mt-3" style="height: 150px">${products[i].description}</p>
+				<p>${products[i].category}</p>
+				<p>Rating: ${products[i].rating.rate}</p>
+				<p>Available left: ${products[i].rating.count}</p>
             </div>
         </div>`
 	);
 	document.write(`</div>`);
 }
+document.write(`</div>`);
 document.write(`</div>`);
 
 // add text truncate / overflow
