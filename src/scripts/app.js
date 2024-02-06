@@ -268,7 +268,7 @@ for (let i = 0; i < products.length; i++) {
             <div class="my-3 p-3">
             <img class="object-fit-cover" style="width: 200px; height: 200px" src="${products[i].image}">
             <p class="lead">${products[i].price}€</p>
-            <h2 class="display-5">${products[i].title}</h2>
+            <h2 class="" style="height: 155px">${products[i].title}</h2>
                     <p>${products[i].description}</p>
                     <p>${products[i].category}</p>
                     <div class="row">
